@@ -55,7 +55,16 @@ nav{
 
 #Contenedor_Central{
   background: #82c3a6;
-  height: 300px;
+  height: 50vh;
+  padding: 2vh 2vh;
+}
+#ImgCentral img{
+  width: 90vw;
+  margin: 2vw auto;
+}
+
+#ImgCentral figcaption{
+  text-align: center;
 }
 
 /*---------------------------Estilos Imagenenes segundarias---------------------------*/
