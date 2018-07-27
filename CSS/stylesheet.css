@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
 }
-#Contenedor{
+
+body{
+  font-family: 'Dancing Script', cursive;
+  background-color: #02010a;
+}
+#Contenido{
   width: 100%;
 }
 
@@ -12,15 +17,59 @@ header, section, article, img, footer, div{
 
 header{
   background-color: #5b7989;
-}
-
-#Cabecera{
-  text-align: left;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-#Cabecera h1{
-  color: #fff;
+img{
+  box-shadow: 2px #02010a;
+}
+
+/*---------------------------Estilos Cabecera---------------------------*/
+
+
+#Cabecera{
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+
+#Titulo{
   text-shadow: 2px 2px #02010a;
+}
+
+nav{
+  position:absolute;
+  right: 0;
+}
+
+#Indice li{
+  display: inline;
+}
+
+#Indice li a{
+  text-decoration: none;
+}
+
+/*---------------------------Estilos Imagen Central---------------------------*/
+
+#Contenedor_Central{
+  background: #82c3a6;
+  height: 300px;
+}
+
+/*---------------------------Estilos Imagenenes segundarias---------------------------*/
+
+#Contenedor_Secundario{
+  background-color: #d5c75f;
+  border: 1px solid;
+  height: 100px;
+}
+
+/*---------------------------Estilos Imagenenes segundarias---------------------------*/
+
+#Contactenos{
+  background-color: #c6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
