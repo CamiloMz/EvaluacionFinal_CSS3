@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#Contenedor{
+  width: 100%;
+}
+
+header, section, article, img, footer, div{
+  display: block;
+}
+
+header{
+  background-color: #5b7989;
+}
+
+#Cabecera{
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#Cabecera h1{
+  color: #fff;
+  text-shadow: 2px 2px #02010a;
+}
