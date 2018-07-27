@@ -6,6 +6,7 @@
 body{
   font-family: 'Dancing Script', cursive;
   background-color: #02010a;
+  letter-spacing: 2px;
 }
 #Contenido{
   width: 100%;
@@ -22,7 +23,11 @@ header{
 }
 
 img{
-  box-shadow: 2px #02010a;
+  box-shadow: 2px 2px #02010a;
+}
+
+figcaption{
+  text-align: center;
 }
 
 /*---------------------------Estilos Cabecera---------------------------*/
@@ -30,24 +35,28 @@ img{
 
 #Cabecera{
   color: #ffffff;
-  display: flex;
-  flex-direction: row;
+  padding: 5px;;
 }
 
 #Titulo{
+  text-align: center;
   text-shadow: 2px 2px #02010a;
+  width: 80%;
+  margin:2px auto;
 }
 
 nav{
-  position:absolute;
-  right: 0;
+  text-align: center;
+  margin-top: 10px;
 }
 
 #Indice li{
   display: inline;
+  margin-left: 10px;
 }
 
 #Indice li a{
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -55,30 +64,147 @@ nav{
 
 #Contenedor_Central{
   background: #82c3a6;
-  height: 50vh;
+  height: auto;
   padding: 2vh 2vh;
 }
 #ImgCentral img{
-  width: 90vw;
+  width: 90%;
   margin: 2vw auto;
-}
-
-#ImgCentral figcaption{
-  text-align: center;
 }
 
 /*---------------------------Estilos Imagenenes segundarias---------------------------*/
 
 #Contenedor_Secundario{
   background-color: #d5c75f;
-  border: 1px solid;
-  height: 100px;
+  height: auto;
+  padding: 2vh 2vh;
 }
 
-/*---------------------------Estilos Imagenenes segundarias---------------------------*/
+.ImgSegundaria img{
+  margin: 2vw auto;
+  width: 90%;
+  border: 1px solid #02010a;
+}
+
+#ImgSegundaria_Izq img{
+  transition: all 1s;
+}
+
+#ImgSegundaria_Izq img:hover{
+  border: 2px solid #82c3a6;
+  box-shadow: 2px 2px #82c3a6;
+  transform: rotate(10deg);
+}
+
+#ImgSegundaria_Der img{
+  transition: all 1.5s;
+}
+
+#ImgSegundaria_Der img:hover{
+  border: 2px solid #82c3a6;
+  box-shadow: 2px 2px #82c3a6;
+  transform: translate(20px,-5px);
+}
+
+/*---------------------------Estilos Footer---------------------------*/
 
 #Contactenos{
   background-color: #c6d5c5;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding: 3vh 5vh;
 }
+
+/*---------------------------Estilos Desktop---------------------------*/
+
+@media(min-width:900px){
+  #Contenido{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #Cabecera{
+    display: flex;
+	  justify-content: space-between;
+    padding: 5px;
+  }
+
+  #Titulo{
+    width: 60%;
+    text-align: left;
+  }
+
+  nav{
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+
+  /*---------------------------Estilos Imagen Central---------------------------*/
+
+  #ImgCentral img{
+    width: 50%;
+    margin: 2vw auto;
+  }
+
+  /*---------------------------Estilos Imagenenes segundarias---------------------------*/
+
+  #Contenedor_Secundario{
+    background-color: #d5c75f;
+    height: auto;
+    padding: 2vh 2vh;
+  }
+  #ImgInferior{
+   padding: 2px;
+   display: flex;
+   flex-direction: row;
+  }
+
+  .ImgSegundaria{
+    display: inline-block;
+    width:50%;
+    height: 100%;
+  }
+
+  .ImgSegundaria img{
+    width: 70%;
+    border: 1px solid #02010a;
+  }
+  #ImgSegundaria_Izq{
+    margin-top: 57px;
+  }
+
+  #ImgSegundaria_Izq img{
+    transition: all 1s;
+  }
+
+  #ImgSegundaria_Izq img:hover{
+    border: 2px solid #82c3a6;
+    box-shadow: 2px 2px #82c3a6;
+    transform: rotate(10deg);
+  }
+
+  #ImgSegundaria_Der{
+  }
+
+  #ImgSegundaria_Der img{
+    transition: all 1.5s;
+  }
+
+  #ImgSegundaria_Der img:hover{
+    border: 2px solid #82c3a6;
+    box-shadow: 2px 2px #82c3a6;
+    transform: translate(20px,-5px);
+  }
+
+  /*---------------------------Estilos Footer---------------------------*/
+
+  #Contactenos{
+    background-color: #c6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 3vh 5vh;
+    width: inherit%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
