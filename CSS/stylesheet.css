@@ -1,13 +1,16 @@
+/* -------------------------------------Estilos Generales------------------------------------- */
+
 *{
   margin: 0;
   padding: 0;
 }
 
 body{
-  font-family: 'Dancing Script', cursive;
   background-color: #02010a;
+  font-family: 'Dancing Script', cursive;
   letter-spacing: 2px;
 }
+
 #Contenido{
   width: 100%;
 }
@@ -53,15 +56,15 @@ figcaption{
 }
 
 #Titulo{
+  margin:2px auto;
   text-align: center;
   text-shadow: 2px 2px #02010a;
   width: 80%;
-  margin:2px auto;
 }
 
 nav{
-  text-align: center;
   margin-top: 10px;
+  text-align: center;
 }
 
 #Indice li{
@@ -74,12 +77,10 @@ nav{
 }
 
 #Indice li a{
-  color: #ffffff;
-  text-decoration: none;
   border-bottom: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
 }
-
-
 
 #Indice li a:active{
   border-bottom: none;
@@ -139,10 +140,10 @@ nav{
 }
 
 .Img_Retrato{
-  padding: 5px;
+  padding: 3vh;
 }
 .Img_Retrato img{
-  height: 50vh;
+  width: 80vw;
   margin: 0 auto;
 }
 
@@ -165,7 +166,7 @@ nav{
 /* ----------------------------Estilos Pagina Paisajes---------------------------- */
 
 .Img_Paisaje{
-  padding: 5px;
+  padding: 3vh;
 }
 .Img_Paisaje img{
   width: 80vW;
@@ -192,7 +193,7 @@ nav{
   #Cabecera{
     display: flex;
 	  justify-content: space-between;
-    padding: 5px;
+    padding: 2vh;
   }
 
   #Titulo{
@@ -201,8 +202,8 @@ nav{
   }
 
   nav{
-    margin-top: 10px;
-    margin-right: 50px;
+    margin-top: 2vh;
+    margin-right: 4vw;
   }
 
   /*---------------------------Estilos Imagen Central---------------------------*/
@@ -232,14 +233,13 @@ nav{
   }
 
   .ImgSegundaria img{
-    width: 70%;
     border: 1px solid #02010a;
   }
-  #ImgSegundaria_Izq{
-    margin-top: 57px;
-  }
+
 
   #ImgSegundaria_Izq img{
+    height: 15vw;
+    width: auto;
     transition: all 1s;
   }
 
@@ -249,10 +249,10 @@ nav{
     transform: rotate(10deg);
   }
 
-  #ImgSegundaria_Der{
-  }
-
   #ImgSegundaria_Der img{
+    background: red;
+    height: 15vw;
+    width: auto;
     transition: all 1.5s;
   }
 
@@ -271,8 +271,8 @@ nav{
     padding: 3vh 5vh;
     width: inherit%;
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   /*---------------------------Estilos Retratos---------------------------*/
