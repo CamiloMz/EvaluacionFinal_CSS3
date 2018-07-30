@@ -20,6 +20,20 @@ header{
   background-color: #5b7989;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  -webkit-animation: miAnimacion 2s;
+  animation: miAnimacion 2s;
+}
+
+@-webkit-keyframes miAnimacion{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
 
 img{
@@ -120,6 +134,7 @@ nav{
 /* ----------------------------Estilos Pagina Retratos---------------------------- */
 
 #Contenedor_Central{
+  background-color: #d5c75f;
   width: 100%;
 }
 
