@@ -55,14 +55,25 @@ nav{
   margin-left: 10px;
 }
 
+#Indice li #Active{
+  border-bottom: none;
+}
+
 #Indice li a{
   color: #ffffff;
   text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+
+
+#Indice li a:active{
+  border-bottom: none;
 }
 
 /*---------------------------Estilos Imagen Central---------------------------*/
 
-#Contenedor_Central{
+#Contenedor_Central_Main{
   background: #82c3a6;
   height: auto;
   padding: 2vh 2vh;
@@ -104,6 +115,46 @@ nav{
   border: 2px solid #82c3a6;
   box-shadow: 2px 2px #82c3a6;
   transform: translate(20px,-5px);
+}
+
+/* ----------------------------Estilos Pagina Retratos---------------------------- */
+
+#Contenedor_Central{
+  width: 100%;
+}
+
+.Img_Retrato{
+  padding: 5px;
+}
+.Img_Retrato img{
+  height: 50vh;
+  margin: 0 auto;
+}
+
+#Contenedor_Central div:first-child{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#Contenedor_Central div:nth-child(even){
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#Contenedor_Central div:nth-child(3){
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+
+/* ----------------------------Estilos Pagina Paisajes---------------------------- */
+
+.Img_Paisaje{
+  padding: 5px;
+}
+.Img_Paisaje img{
+  width: 80vW;
+  margin: 0 auto;
 }
 
 /*---------------------------Estilos Footer---------------------------*/
@@ -208,3 +259,38 @@ nav{
     justify-content: center;
     margin: 0 auto;
   }
+
+  /*---------------------------Estilos Retratos---------------------------*/
+
+  #Contenedor_Central{
+    background: #d5c75f;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.2vw;;
+    box-sizing: border-box;
+  }
+
+  .contenedor_imagen{
+    display: inline-block;
+    width: 30%;
+    padding: 0.2vw;
+    margin: 0.5vh 0.5vh;
+  }
+
+  .contenedor_imagen .Img_Retrato img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+
+  .contenedor_imagen .Img_Paisaje img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+}
