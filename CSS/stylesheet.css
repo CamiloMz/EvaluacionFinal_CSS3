@@ -27,6 +27,11 @@ header{
   animation: miAnimacion 2s;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 @-webkit-keyframes miAnimacion{
   0%{
     margin-top: 150%;
@@ -79,7 +84,6 @@ nav{
 #Indice li a{
   border-bottom: 1px solid #fff;
   color: #fff;
-  text-decoration: none;
 }
 
 #Indice li a:active{
@@ -132,6 +136,16 @@ nav{
   transform: translate(20px,-5px);
 }
 
+figcaption span{
+  border-bottom: 1px solid #02010a;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+
+figcaption span:hover{
+  font-size: 20px;
+}
+
 /* ----------------------------Estilos Pagina Retratos---------------------------- */
 
 #Contenedor_Central{
@@ -182,6 +196,9 @@ nav{
   padding: 3vh 5vh;
 }
 
+#Contactenos div a{
+  display: block;
+}
 /*---------------------------Estilos Desktop---------------------------*/
 
 @media(min-width:900px){
@@ -250,7 +267,6 @@ nav{
   }
 
   #ImgSegundaria_Der img{
-    background: red;
     height: 15vw;
     width: auto;
     transition: all 1.5s;
@@ -268,11 +284,31 @@ nav{
     background-color: #c6d5c5;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 3vh 5vh;
+    padding: 1vh 2vh;
     width: inherit%;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  #Contactenos div{
+    padding: 0.5vw;
+  }
+
+  span{
+    font-size: 0.7em;
+  }
+
+  #Contactenos div:first-child{
+    width: 22%;
+  }
+
+  #Contactenos div:nth-child(2){
+    width: 22%;
+  }
+
+  #Contactenos div:nth-child(3){
+    width: 30%;
   }
 
   /*---------------------------Estilos Retratos---------------------------*/
