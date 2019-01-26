@@ -1,8 +1,8 @@
 /* -------------------------------------Estilos Generales------------------------------------- */
-
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -11,338 +11,40 @@ body{
   letter-spacing: 2px;
 }
 
-#Contenido{
+.brand-container{
+  display: inline-block;
+  height: 110%;
+  width: 15%;
+  padding: 0;
+  background: #a2b6b5;
+  color: rgb(12, 63, 70);
+  position: relative;
+}
+
+.logo-container{
+  height: 100%;
+}
+
+.logo-img{
   width: 100%;
+  color: white;
+  margin: 0 auto;
 }
 
-header, section, article, img, footer, div{
-  display: block;
-}
-
-header{
-  background-color: #5b7989;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  -webkit-animation: miAnimacion 2s;
-  animation: miAnimacion 2s;
-}
-
-a{
-  color: inherit;
-  text-decoration: none;
-}
-
-@-webkit-keyframes miAnimacion{
-  0%{
-    margin-top: 150%;
-  }
-  60%{
-    margin-top: -5%;
-  }
-  100%{
-    margin-top: 0%;
-  }
-}
-
-img{
-  box-shadow: 2px 2px #02010a;
-}
-
-figcaption{
+.brand-text{
+  height: 100%;
   text-align: center;
 }
 
-/*---------------------------Estilos Cabecera---------------------------*/
-
-
-#Cabecera{
-  color: #ffffff;
-  padding: 5px;;
-}
-
-#Titulo{
-  margin:2px auto;
-  text-align: center;
-  text-shadow: 2px 2px #02010a;
-  width: 80%;
-}
-
-nav{
-  margin-top: 10px;
-  text-align: center;
-}
-
-#Indice li{
-  display: inline;
-  margin-left: 10px;
-}
-
-#Indice li #Active{
-  border-bottom: none;
-}
-
-#Indice li a{
-  border-bottom: 1px solid #fff;
-  color: #fff;
-}
-
-#Indice li a:active{
-  border-bottom: none;
-}
-
-/*---------------------------Estilos Imagen Central---------------------------*/
-
-#Contenedor_Central_Main{
-  background: #82c3a6;
+.brand-title{
   height: auto;
-  padding: 2vh 2vh;
-}
-#ImgCentral img{
-  width: 90%;
-  margin: 2vw auto;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-/*---------------------------Estilos Imagenenes segundarias---------------------------*/
-
-#Contenedor_Secundario{
-  background-color: #d5c75f;
+.brand-subtitle{
   height: auto;
-  padding: 2vh 2vh;
-}
-
-.ImgSegundaria img{
-  border: 1px solid #02010a;
-  margin: 2vw auto;
-  width: 90%;
-}
-
-#ImgSegundaria_Izq img{
-  transition: all 1s;
-}
-
-#ImgSegundaria_Izq img:hover{
-  border: 2px solid #82c3a6;
-  box-shadow: 2px 2px #82c3a6;
-  transform: rotate(10deg);
-}
-
-#ImgSegundaria_Der img{
-  transition: all 1.5s;
-}
-
-#ImgSegundaria_Der img:hover{
-  border: 2px solid #82c3a6;
-  box-shadow: 2px 2px #82c3a6;
-  transform: translate(20px,-5px);
-}
-
-figcaption span{
-  border-bottom: 1px solid #02010a;
-  font-size: 15px;
-  transition: all 0.5s;
-}
-
-figcaption span:hover{
+  margin-top: 0;
   font-size: 20px;
-}
-
-/* ----------------------------Estilos Pagina Retratos---------------------------- */
-
-#Contenedor_Central{
-  background-color: #d5c75f;
-  width: 100%;
-}
-
-.Img_Retrato{
-  padding: 3vh;
-}
-.Img_Retrato img{
-  margin: 0 auto;
-  width: 80vw;
-}
-
-#Contenedor_Central div:first-child{
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
-}
-
-#Contenedor_Central div:nth-child(even){
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-#Contenedor_Central div:nth-child(3){
-  -webkit-filter: sepia(90%);
-  filter: sepia(90%);
-}
-
-
-/* ----------------------------Estilos Pagina Paisajes---------------------------- */
-
-.Img_Paisaje{
-  padding: 3vh;
-}
-
-.Img_Paisaje img{
-  margin: 0 auto;
-  width: 80vW;
-}
-
-/*---------------------------Estilos Footer---------------------------*/
-
-#Contactenos{
-  background-color: #c6d5c5;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 3vh 5vh;
-}
-
-#Contactenos div a{
-  display: block;
-}
-/*---------------------------Estilos Desktop---------------------------*/
-
-@media(min-width:900px){
-  #Contenido{
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  #Cabecera{
-    display: flex;
-	  justify-content: space-between;
-    padding: 2vh;
-  }
-
-  #Titulo{
-    width: 60%;
-    text-align: left;
-  }
-
-  nav{
-    margin-top: 2vh;
-    margin-right: 4vw;
-  }
-
-  /*---------------------------Estilos Imagen Central---------------------------*/
-
-  #ImgCentral img{
-    margin: 2vw auto;
-    width: 50%;
-  }
-
-  /*---------------------------Estilos Imagenenes segundarias---------------------------*/
-
-  #Contenedor_Secundario{
-    background-color: #d5c75f;
-    height: auto;
-    padding: 2vh 2vh;
-  }
-  #ImgInferior{
-   padding: 2px;
-   display: flex;
-   flex-direction: row;
-  }
-
-  .ImgSegundaria{
-    display: inline-block;
-    height: 100%;
-    width:50%;
-  }
-
-  .ImgSegundaria img{
-    border: 1px solid #02010a;
-  }
-
-
-  #ImgSegundaria_Izq img{
-    height: 15vw;
-    width: auto;
-    transition: all 1s;
-  }
-
-  #ImgSegundaria_Izq img:hover{
-    border: 2px solid #82c3a6;
-    box-shadow: 2px 2px #82c3a6;
-    transform: rotate(10deg);
-  }
-
-  #ImgSegundaria_Der img{
-    height: 15vw;
-    width: auto;
-    transition: all 1.5s;
-  }
-
-  #ImgSegundaria_Der img:hover{
-    border: 2px solid #82c3a6;
-    box-shadow: 2px 2px #82c3a6;
-    transform: translate(20px,-5px);
-  }
-
-  /*---------------------------Estilos Footer---------------------------*/
-
-  #Contactenos{
-    background-color: #c6d5c5;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 1vh 2vh;
-    width: inherit%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-  }
-
-  #Contactenos div{
-    padding: 0.5vw;
-  }
-
-  span{
-    font-size: 0.7em;
-  }
-
-  #Contactenos div:first-child{
-    width: 22%;
-  }
-
-  #Contactenos div:nth-child(2){
-    width: 22%;
-  }
-
-  #Contactenos div:nth-child(3){
-    width: 30%;
-  }
-
-  /*---------------------------Estilos Retratos---------------------------*/
-
-  #Contenedor_Central{
-    background: #d5c75f;
-    box-sizing: border-box;
-    width: inherit;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1.2vw;;
-  }
-
-  .contenedor_imagen{
-    display: inline-block;
-    margin: 0.5vh 0.5vh;
-    padding: 0.2vw;
-    width: 30%;
-  }
-
-  .contenedor_imagen .Img_Retrato img{
-    display: inline-block;
-    height: auto;
-    width: 100%;
-  }
-
-
-  .contenedor_imagen .Img_Paisaje img{
-    display: inline-block;
-    height: auto;
-    width: 100%;
-  }
-
 }
