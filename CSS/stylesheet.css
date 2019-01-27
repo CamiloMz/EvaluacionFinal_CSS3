@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 /* -------------------------------------Estilos Generales------------------------------------- */
 *{
   margin: 0;
@@ -6,19 +9,33 @@
 }
 
 body{
-  background-color: #02010a;
-  font-family: 'Dancing Script', cursive;
+  background-color: #fff;
   letter-spacing: 2px;
+  font-family: 'EB Garamond', serif;
+}
+
+/*---------------------------------Estilos barra de navegacion---------------------------------*/
+.navbar-fixed:first-child{
+  position: absolute;
+  width: 100%;
 }
 
 .brand-container{
-  display: inline-block;
-  height: 110%;
-  width: 15%;
+  display: flex;
+  height: 74px;
+  width: 20%;
   padding: 0;
-  background: #a2b6b5;
   color: rgb(12, 63, 70);
   position: relative;
+  z-index: 1000;
+  left: 70%;
+  margin-bottom: 0 !important;
+  /*background-image: linear-gradient(#FFFFFF,#f6e9e9);*/
+  box-shadow: 0px 10px 5px black;
+}
+
+.brand-container:hover{
+  cursor: pointer;
 }
 
 .logo-container{
@@ -27,12 +44,12 @@ body{
 
 .logo-img{
   width: 100%;
-  color: white;
   margin: 0 auto;
+  margin-top: 15px;
 }
 
 .brand-text{
-  height: 100%;
+  height: auto;
   text-align: center;
 }
 
@@ -40,11 +57,127 @@ body{
   height: auto;
   font-size: 30px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 5px;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
 }
 
 .brand-subtitle{
   height: auto;
   margin-top: 0;
   font-size: 20px;
+}
+
+#nav-mobile{
+  z-index: 1;
+}
+
+
+/*---------------------------------Estilos contenido---------------------------------*/
+
+#Contenedor_Central_Main{
+  height: 90vh;
+  width:100%;
+  margin-top: -10px;
+  position: absolute;
+  overflow: hidden;
+}
+
+#ImgCentral{
+  width: 100%;
+  filter: sepia(80%);
+  position: relative;
+  top: 0;
+}
+
+.banner-txt-container{
+  position: relative;
+  color: #1de9b6;
+  width: 30%;
+  left: 10%;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 50%;
+  box-shadow: 1px 3px 4px #1de9b6;
+}
+
+.banner-txt-container:hover{
+  background-color: rgba(17, 36, 35, 0.4);
+  box-shadow: none;
+}
+
+.banner-title{
+  font-family: 'Cinzel', serif;
+  text-shadow: 7px 7px 3px black;
+}
+
+.btn-more-container{
+  position: relative;
+  left: 70%;
+  width: 20%;
+  background-color: none;
+  color: #1de9b6;
+  padding: 15PX;
+  border-radius: 50%;
+  box-shadow: 1px 3px 4px #1de9b6;
+}
+
+.btn-more-container:hover{
+  background-color: rgba(17, 36, 35, 0.4);
+  box-shadow: none;
+}
+
+#btn-more{
+  background: none;
+  text-shadow: 3px 3px 2px black;
+}
+
+#btn-more:hover{
+  background: none;
+}
+.btn-label{
+  text-shadow: 5px 5px 2px black;
+  font-size: 20px;
+}
+
+
+/*--asdsadsadasdsadas --*/
+.section-container{
+  height: 100vh;
+}
+
+
+
+.gallery-img{
+  width: 100%;
+}
+
+.gallery-container{
+  height: 100%;
+  margin-top: 8vh;
+}
+
+.gallery-description-container{
+  padding-right: 15px !important;
+}
+
+.section-title{
+  font-size: 30px;
+}
+
+.section-txt{
+  text-align: justify;
+  padding: 0 3s5px;
+}
+
+.section-title::first-letter{
+  font-size: 50px;
+}
+
+.gallery-img{
+  filter:opacity(30%); 
+}
+
+.slider-container{
+  padding: 0 35px;
 }
