@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|EB+Garamond|Source+Code+Pro');
+
+$font-title: 'Cinzel Decorative', cursive;
+$font-body: 'EB Garamond', serif;
+$font-subtitle: 'Source Code Pro', monospace;
+
+//Estilos generales
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Estilos de la barra de navegación
+.navbar-fixed:first-child{
+  position: absolute;
+}
+
+//Estilo adorno nav
+.brand-container{
+  display: flex;
+  height: 9.5vh;
+  width: 40%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 997;
+  font-family: $font-title;
+}
+
+.logo-container{
+  height: 64px;
+  padding: 0 0 0 10px !important;
+}
+
+.logo-img{
+  height: 100%;
+  margin-top: 20px;
+}
+
+.brand-title{
+  font-weight: 600;
+}
+
+//Estilos de seccion
+
+#banner-img{
+  margin-top: -8px;
+  filter: sepia(80%) blur(1px);
+}

@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|EB+Garamond|Source+Code+Pro');
 /* -------------------------------------Estilos Generales------------------------------------- */
 *{
   margin: 0;
@@ -175,7 +173,7 @@ body{
 }
 
 .gallery-img{
-  filter:opacity(30%); 
+  filter:opacity(30%);
 }
 
 .slider-container{

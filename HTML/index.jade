@@ -1,0 +1,60 @@
+doctype
+html(lang="es")
+  head
+    title
+    //METADATA
+    meta(charset="utf-8")
+    meta(name="viewport",content="width=device-width, initial-scale=1.0")
+    meta(name="author",content="MAOMK MARKETING AND DESIGN")
+    //Import our stylesheet
+    link(rel="stylesheet",type="text/css",href="../CSS/main.css")
+    //Import Materialize's stylesheet
+    link(rel="stylesheet",type="text/css",href="../CSS/materialize.css")
+    //Import JQuery
+    script(src="../JS/jquery-3.3.1.js")
+    //Import our own JS
+    script(src="../JS/app.js")  
+    //Import materialize´s icons
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")  
+    //Import materialize's JS
+    script(src="../JS/materialize.min.js")
+  body
+    header
+      div.navbar-fixed
+        nav
+          div.nav-wrapper.teal.darken-4
+            a.sidenav-trigger(data-target="mobile-demo", href="#")
+              i.material-icons menu
+            ul.nav-mobile.center.hide-on-med-and-down
+              li: a(href="index.html") Home
+              li: a(href="portafolio.html") Portafolio
+              li: a(href="contacto.html") Contacto
+          ul#mobile-demo.sidenav
+            li: a(href="index.html") Home
+            li: a(href="portafolio.html") Portafolio
+            li: a(href="contacto.html") Contacto
+      div.brand-container.teal.accent-2.z-depth-4
+        div.row
+          div.logo-container.col.s4
+            img.logo-img.responsive-img(src="../Images/Logo.png")
+          div.brand-text.col.s8.center-align
+            h3.brand-title.flow-text JADE
+            h4.brand-subtitle.flow-text.hide-on-med-and-down Photographs
+    section#section-banner
+      picture.banner-img-container
+        img#banner-img.responsive-img(src="../Images/jade-cabeza1.jpg" alt="Foto de Jade",title="Foto de Jade")
+    section#section-photos.container
+      h1.section-photos-title.center-align.flow-text Fotografias   
+      hr 
+      h4.flow-text.center-align ¿Por qué me ponen cosas en la cabeza?
+      p.flow-text Mi pequeña Jade llego a nuestras vidas para darnos alegrías, luchamos por cuidarla, por quererla y por darle mucho cariño todos los días.
+      p.flow-text No sabemos si le gusta que le tomemos fotos, o que le coloquemos cosas en la cabeza... pero nunca se ha quejado.
+      p.flow-text Espero puedan disfrutar esta pequeña galeria tanto como nosotros disfrutamos y reimos viviendo cada uno de estos momentos.
+    div.gallery-container
+      div.slider-container
+        div.slider
+          ul.slides
+            li
+              img.materialboxed.gallery-img(src="../Images/jade-cabeza1.jpg")
+              li
+                img.materialboxed.gallery-img(src="../Images/jade-cabeza1.jpg")  
