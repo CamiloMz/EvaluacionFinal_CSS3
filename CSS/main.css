@@ -1,13 +1,17 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative|EB+Garamond|Source+Code+Pro");
+/*-----Estilos generales-----*/
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/*-----Estilos de la barra de navegación-----*/
 .navbar-fixed:first-child {
   position: absolute; }
 
+/*-----Estilo adorno nav-----*/
 .brand-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,20 +22,33 @@
   top: 0;
   left: 50%;
   z-index: 997;
-  font-family: "Cinzel Decorative", cursive; }
+  font-family: "Cinzel Decorative", cursive;
+  max-height: 70px; }
 
 .logo-container {
-  height: 64px;
+  height: 100%;
   padding: 0 0 0 10px !important; }
 
 .logo-img {
   height: 100%;
-  margin-top: 20px; }
+  margin-top: 40%; }
 
 .brand-title {
-  font-weight: 600; }
+  font-weight: bolder; }
 
+/*-----Estilos Banner-----*/
 #banner-img {
   margin-top: -8px;
   -webkit-filter: sepia(80%) blur(1px);
   filter: sepia(80%) blur(1px); }
+
+#section-banner {
+  position: relative;
+  border: 2px solid black; }
+
+.banner-txt-container {
+  position: absolute;
+  top: 50%;
+  color: #afcfd0; }
+
+/*-----Estilos de seccion-----*/

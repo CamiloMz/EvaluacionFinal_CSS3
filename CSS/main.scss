@@ -4,19 +4,19 @@ $font-title: 'Cinzel Decorative', cursive;
 $font-body: 'EB Garamond', serif;
 $font-subtitle: 'Source Code Pro', monospace;
 
-//Estilos generales
+/*-----Estilos generales-----*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-//Estilos de la barra de navegación
+/*-----Estilos de la barra de navegación-----*/
 .navbar-fixed:first-child{
   position: absolute;
 }
 
-//Estilo adorno nav
+/*-----Estilo adorno nav-----*/
 .brand-container{
   display: flex;
   height: 9.5vh;
@@ -26,25 +26,38 @@ $font-subtitle: 'Source Code Pro', monospace;
   left: 50%;
   z-index: 997;
   font-family: $font-title;
+  max-height: 70px;
 }
 
 .logo-container{
-  height: 64px;
+  height: 100%;
   padding: 0 0 0 10px !important;
 }
 
 .logo-img{
   height: 100%;
-  margin-top: 20px;
+  margin-top: 40%;
 }
 
 .brand-title{
-  font-weight: 600;
+  font-weight: bolder;
 }
 
-//Estilos de seccion
-
+/*-----Estilos Banner-----*/
 #banner-img{
   margin-top: -8px;
   filter: sepia(80%) blur(1px);
 }
+
+#section-banner{
+  position: relative;
+  border: 2px solid black;
+}
+
+.banner-txt-container{
+  position: absolute;
+  top: 50%;
+  color: rgb(175, 207, 208);
+}
+
+/*-----Estilos de seccion-----*/
