@@ -8,30 +8,27 @@
   box-sizing: border-box; }
 
 /*-----Estilos de la barra de navegación-----*/
-.navbar-fixed:first-child {
-  position: absolute; }
-
 /*-----Estilo adorno nav-----*/
 .brand-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 9.5vh;
-  width: 40%;
+  width: 20vh;
   position: fixed;
   top: 0;
-  left: 50%;
+  right: 10%;
   z-index: 997;
   font-family: "Cinzel Decorative", cursive;
   max-height: 70px; }
 
 .logo-container {
-  height: 100%;
-  padding: 0 0 0 10px !important; }
+  height: 70px;
+  padding: 0 0.2rem !important; }
 
 .logo-img {
-  height: 100%;
-  margin-top: 40%; }
+  width: 100%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 .brand-title {
   font-weight: bolder; }
@@ -40,15 +37,67 @@
 #banner-img {
   margin-top: -8px;
   -webkit-filter: sepia(80%) blur(1px);
-  filter: sepia(80%) blur(1px); }
+  filter: sepia(80%) blur(1px);
+  opacity: 0.8; }
 
 #section-banner {
-  position: relative;
-  border: 2px solid black; }
+  position: relative; }
 
 .banner-txt-container {
   position: absolute;
-  top: 50%;
-  color: #afcfd0; }
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #02342c;
+  text-shadow: 3px 0px 4px #fff;
+  font-weight: 700; }
 
 /*-----Estilos de seccion-----*/
+.section-photos-title {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: bolder;
+  font-size: 3rem !important; }
+
+.gallery-title::first-letter {
+  font-size: 3rem !important;
+  font-family: "Cinzel Decorative", cursive; }
+
+.gallery-title {
+  text-transform: uppercase !important;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  line-height: 1.5em;
+  font-weight: 600; }
+
+.slider-container {
+  min-width: 100%;
+  margin-top: 20px;
+  position: relative; }
+
+hr.style12 {
+  height: 6px;
+  background: url(../Images/hr.png) repeat-x 0 0;
+  border: 0; }
+
+#img-link {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 57, 57, 0.89); }
+
+#slider-text {
+  color: #69e2da;
+  text-decoration: none;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: "EB Garamond", serif; }
+
+#slider-text a {
+  color: #69e2da;
+  font-family: "EB Garamond", serif; }

@@ -23,23 +23,23 @@
     <header>
       <div class="navbar-fixed">
         <nav>
-          <div class="nav-wrapper teal darken-4"><a class="sidenav-trigger" data-target="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+          <div class="nav-wrapper teal darken-4"><a class="sidenav-trigger" data-target="slide-out" href="#"><i class="material-icons">menu</i></a>
             <ul class="nav-mobile center hide-on-med-and-down">
               <li><a href="index.html">Home</a></li>
               <li><a href="portafolio.html">Portafolio</a></li>
               <li><a href="contacto.html">Contacto</a></li>
             </ul>
           </div>
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
         </nav>
       </div>
+      <ul class="sidenav" id="slide-out">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
       <div class="brand-container teal accent-2 z-depth-4">
         <div class="row">
-          <div class="logo-container col s4"><img class="logo-img responsive-img" src="../Images/Logo1.png"></div>
+          <div class="logo-container col s4"><img class="logo-img" src="../Images/Logo1.png"></div>
           <div class="brand-text col s8 center-align">
             <h3 class="brand-title flow-text">JADE</h3>
             <h4 class="brand-subtitle flow-text hide-on-med-and-down">Photographs</h4>
@@ -50,28 +50,56 @@
     <section id="section-banner">
       <picture class="banner-img-container"><img class="responsive-img" id="banner-img" src="../Images/jade-cabeza1.jpg" alt="Foto de Jade" title="Foto de Jade"></picture>
       <div class="banner-txt-container"> 
-        <h3 class="banner-tittle">WOW!</h3>
+        <h3 class="center-align"> <i class="medium material-icons">arrow_downward</i></h3>
         <smal class="banner-txt-cub">DESLIZA PARA VER MÁS</smal>
       </div>
     </section>
     <section class="container" id="section-photos">
       <h1 class="section-photos-title center-align flow-text">Fotografias   </h1>
-      <hr>
-      <h4 class="flow-text center-align">¿Por qué me ponen cosas en la cabeza?</h4>
-      <p class="flow-text">Mi pequeña Jade llego a nuestras vidas para darnos alegrías, luchamos por cuidarla, por quererla y por darle mucho cariño todos los días.</p>
-      <p class="flow-text">No sabemos si le gusta que le tomemos fotos, o que le coloquemos cosas en la cabeza... pero nunca se ha quejado.</p>
-      <p class="flow-text">Espero puedan disfrutar esta pequeña galeria tanto como nosotros disfrutamos y reimos viviendo cada uno de estos momentos.</p>
+      <hr class="style12">
+      <h4 class="flow-text gallery-title">Sombreros, gorros, pañuelos y otras cosas</h4>
+      <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nisi aliquam, enim excepturi natus quod at, ad voluptatem veniam magnam dolorem provident impedit nam numquam labore, rerum temporibus officia qui.</p><br>
+      <p class="flow-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dolorum, laboriosam a deserunt nobis doloribus, perspiciatis omnis, asperiores, aut quo aperiam blanditiis. Eveniet, iste, consequatur! Ducimus, error veritatis ut dolores.</p>
     </section>
-    <div class="gallery-container">
+    <section>
       <div class="slider-container">
         <div class="slider">
           <ul class="slides">
-            <li><img class="materialboxed gallery-img" src="../Images/jade-cabeza1.jpg">
-              <li><img class="materialboxed gallery-img" src="../Images/jade-cabeza1.jpg"></li>
+            <li><img class="gallery-img" src="../Images/fotos/Photos/jade-cabeza/jade-cabeza2.jpg"></li>
+            <li><img class="gallery-img" src="../Images/fotos/Photos/jade-cabeza/jade-cabeza6.jpg"></li>
+            <li><img class="gallery-img" src="../Images/fotos/Photos/jade-cabeza/jade-cabeza7.png">
+              <div class="caption center-align" id="img-link">
+                <div id="slider-text">
+                  <h3>Si quieres ver más</h3><a class="light grey-text text-lighten-3" href="!#">click acá!</a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="container" id="section-photos"> 
+      <h4 class="flow-text gallery-title">Caras, ojitos, muecas y risas</h4>
+      <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nisi aliquam, enim excepturi natus quod at, ad voluptatem veniam magnam dolorem provident impedit nam numquam labore, rerum temporibus officia qui.</p><br>
+      <p class="flow-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dolorum, laboriosam a deserunt nobis doloribus, perspiciatis omnis, asperiores, aut quo aperiam blanditiis. Eveniet, iste, consequatur! Ducimus, error veritatis ut dolores.</p>
+    </section>
+    <section>
+      <div class="slider-container">
+        <div class="slider">
+          <ul class="slides">
+            <li><img class="gallery-img" src="../Images/fotos/Photos/jade-cara/jade-cara1.jpg"></li>
+            <li><img class="gallery-img" src="../Images/fotos/Photos/jade-cara/jade-cara2.jpg"></li>
+            <li><img class="gallery-img" src="../Images/fotos/Photos/jade-cara/jade-cara3.jpg">
+              <div class="caption center-align" id="img-link">
+                <div id="slider-text">
+                  <h3>Si quieres ver más</h3><a class="light grey-text text-lighten-3" href="!#">click acá!</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="teal darken-4"><a href="#">Facebook</a><br><a href="#">Instagram</a><br><a href="#">Twitter</a></footer>
   </body>
 </html>

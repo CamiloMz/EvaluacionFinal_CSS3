@@ -23,20 +23,20 @@ html(lang="es")
       div.navbar-fixed
         nav
           div.nav-wrapper.teal.darken-4
-            a.sidenav-trigger(data-target="mobile-demo", href="#")
+            a.sidenav-trigger(data-target="slide-out", href="#")
               i.material-icons menu
             ul.nav-mobile.center.hide-on-med-and-down
               li: a(href="index.html") Home
               li: a(href="portafolio.html") Portafolio
               li: a(href="contacto.html") Contacto
-          ul#mobile-demo.sidenav
+      ul#slide-out.sidenav
             li: a(href="index.html") Home
             li: a(href="portafolio.html") Portafolio
             li: a(href="contacto.html") Contacto
       div.brand-container.teal.accent-2.z-depth-4
         div.row
           div.logo-container.col.s4
-            img.logo-img.responsive-img(src="../Images/Logo1.png")
+            img.logo-img(src="../Images/Logo1.png")
           div.brand-text.col.s8.center-align
             h3.brand-title.flow-text JADE
             h4.brand-subtitle.flow-text.hide-on-med-and-down Photographs
@@ -44,20 +44,52 @@ html(lang="es")
       picture.banner-img-container
         img#banner-img.responsive-img(src="../Images/jade-cabeza1.jpg" alt="Foto de Jade",title="Foto de Jade")
       div.banner-txt-container  
-        h3.banner-tittle WOW!
+        h3.center-align 
+          i.medium.material-icons arrow_downward
         smal.banner-txt-cub DESLIZA PARA VER MÁS
     section#section-photos.container
       h1.section-photos-title.center-align.flow-text Fotografias   
-      hr 
-      h4.flow-text.center-align ¿Por qué me ponen cosas en la cabeza?
-      p.flow-text Mi pequeña Jade llego a nuestras vidas para darnos alegrías, luchamos por cuidarla, por quererla y por darle mucho cariño todos los días.
-      p.flow-text No sabemos si le gusta que le tomemos fotos, o que le coloquemos cosas en la cabeza... pero nunca se ha quejado.
-      p.flow-text Espero puedan disfrutar esta pequeña galeria tanto como nosotros disfrutamos y reimos viviendo cada uno de estos momentos.
-    div.gallery-container
+      hr.style12
+      h4.flow-text.gallery-title Sombreros, gorros, pañuelos y otras cosas
+      p.flow-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nisi aliquam, enim excepturi natus quod at, ad voluptatem veniam magnam dolorem provident impedit nam numquam labore, rerum temporibus officia qui.
+      br
+      p.flow-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dolorum, laboriosam a deserunt nobis doloribus, perspiciatis omnis, asperiores, aut quo aperiam blanditiis. Eveniet, iste, consequatur! Ducimus, error veritatis ut dolores.
+    section
       div.slider-container
         div.slider
           ul.slides
             li
-              img.materialboxed.gallery-img(src="../Images/jade-cabeza1.jpg")
-              li
-                img.materialboxed.gallery-img(src="../Images/jade-cabeza1.jpg")  
+              img.gallery-img(src="../Images/fotos/Photos/jade-cabeza/jade-cabeza2.jpg")
+            li
+              img.gallery-img(src="../Images/fotos/Photos/jade-cabeza/jade-cabeza6.jpg")  
+            li
+              img.gallery-img(src="../Images/fotos/Photos/jade-cabeza/jade-cabeza7.png")
+              div.caption.center-align#img-link
+                div#slider-text
+                  h3 Si quieres ver más
+                  a.light.grey-text.text-lighten-3(href="!#") click acá!
+    section#section-photos.container  
+      h4.flow-text.gallery-title Caras, ojitos, muecas y risas
+      p.flow-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nisi aliquam, enim excepturi natus quod at, ad voluptatem veniam magnam dolorem provident impedit nam numquam labore, rerum temporibus officia qui.
+      br
+      p.flow-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dolorum, laboriosam a deserunt nobis doloribus, perspiciatis omnis, asperiores, aut quo aperiam blanditiis. Eveniet, iste, consequatur! Ducimus, error veritatis ut dolores.
+    section
+      div.slider-container
+        div.slider
+          ul.slides
+            li
+              img.gallery-img(src="../Images/fotos/Photos/jade-cara/jade-cara1.jpg")
+            li
+              img.gallery-img(src="../Images/fotos/Photos/jade-cara/jade-cara2.jpg")  
+            li
+              img.gallery-img(src="../Images/fotos/Photos/jade-cara/jade-cara3.jpg")
+              div.caption.center-align#img-link
+                div#slider-text
+                  h3 Si quieres ver más
+                  a.light.grey-text.text-lighten-3(href="!#") click acá!
+    footer.teal.darken-4
+      a(href="#") Facebook
+      br
+      a(href="#") Instagram
+      br
+      a(href="#") Twitter
