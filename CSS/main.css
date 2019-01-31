@@ -7,6 +7,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  background-color: #f8f8f8; }
+
 /*-----Estilos de la barra de navegación-----*/
 /*-----Estilo adorno nav-----*/
 .brand-container {
@@ -50,7 +53,6 @@
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  color: #02342c;
   text-shadow: 3px 0px 4px #fff;
   font-weight: 700; }
 
@@ -60,21 +62,33 @@
   font-weight: bolder;
   font-size: 3rem !important; }
 
+#section-photos {
+  padding: 0 !important;
+  margin: 0 !important; }
+
 .gallery-title::first-letter {
   font-size: 3rem !important;
-  font-family: "Cinzel Decorative", cursive; }
+  font-family: "Cinzel Decorative", cursive;
+  width: 100%; }
 
 .gallery-title {
   text-transform: uppercase !important;
   text-align: center;
   font-family: "Source Code Pro", monospace;
   line-height: 1.5em;
-  font-weight: 600; }
+  font-weight: 600;
+  color: #f8f8f8; }
+
+.section-txt {
+  background-color: #161616;
+  padding: 2rem; }
 
 .slider-container {
   min-width: 100%;
-  margin-top: 20px;
   position: relative; }
+
+.txt {
+  color: #8b8b8b; }
 
 hr.style12 {
   height: 6px;
